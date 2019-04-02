@@ -1,3 +1,65 @@
+
+header {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 
+}
+
+body {
+    margin: 0px;
+}
+
+.logo {
+    height: 25px;
+}
+
+.menu {
+
+}
+
+.white-box {
+    text-align: center
+}
+
+.server {
+    height: 160px;
+}
+
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.scroll {
+    display: none;
+}
+
+.blue-box {
+    text-align: center;
+    background-color: #00c2ff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blue-box li {
+    color: white;
+}
+
+.sketch {
+    height: 70px;
+    padding: 10px;
+}
+
+.grey-box {
+    text-align: center
+}
+
 ul {
     list-style-type: none;
+    padding: 0px;
 }
