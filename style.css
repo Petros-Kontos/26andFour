@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 header {
     margin: 0px;
     padding: 10px;
@@ -9,6 +11,7 @@ header {
 
 body {
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -24,15 +27,28 @@ body {
 }
 
 .server {
-    height: 160px;
+    height: 140px;
+    padding: 0px;
+    margin: 10px 0% 10px 5em;
+}
+
+.server-container {
+
 }
 
 .title {
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    margin: 4px;
 }
 
 .subtitle {
     text-align: center;
+    font-size: 13px;
+    padding: 4px;
+    margin: 4px;
 }
 
 .scroll {
@@ -44,6 +60,7 @@ body {
     background-color: #00c2ff;
     margin: 0px;
     padding: 0px;
+    border-top-left-radius: 6%;
 }
 
 .blue-box li {
