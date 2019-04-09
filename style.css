@@ -17,8 +17,6 @@ body {
     height: 25px;
 }
 
-
-
 .server-img {
     height: 140px;
     padding: 0px;
@@ -59,13 +57,14 @@ h2 {
     transform: skewY(-2deg);
 }
 
-.blue-box li {
+.blue-box .item {
     color: white;
     transform: skewY(2deg);
     font-size: 12px;
+    padding: 2em;
 }
 
-.sketch {
+.blue-box .item img {
     height: 70px;
     padding: 10px;
 }
@@ -75,8 +74,11 @@ h2 {
     padding: 2.5em 1em 2.5em 1em;
 }
 
-.grey-box li {
+.grey-box .container {
     padding-bottom: 1em;
+    display: flex;
+    flex-direction:column;
+
 }
 
 ul {
@@ -101,4 +103,16 @@ ul {
     border-radius: 30%;
     color: white;
     width: 10em;
+}
+
+@media (min-width: 700px) {
+    .blue-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grey-box .container {
+        flex-direction: row;
+    }
+
 }
