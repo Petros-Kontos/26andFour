@@ -7,27 +7,22 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
 }
-
 .logo {
     height: 25px;
 }
-
-.server-img {
+.server .img {
     height: 140px;
     padding: 0px;
-    margin: 10px 0% 10px 5em;
+    margin: 10px 0% 30px 5em;
 }
-
-.server-img-container {
+.server {
     text-align: center;
     margin: 10px 0px 20px 0px;
 }
-
 h1 {
     text-align: center;
     font-size: 18px;
@@ -35,7 +30,6 @@ h1 {
     padding: 4px;
     margin: 4px;
 }
-
 h2 {
     text-align: center;
     font-size: 13px;
@@ -43,11 +37,9 @@ h2 {
     margin: 4px 0px 5em 0px;
     font-weight: normal;
 }
-
 .scroll {
     display: none;
 }
-
 .blue-box {
     text-align: center;
     background-color: #00c2ff;
@@ -56,67 +48,53 @@ h2 {
     border-top-left-radius: 6%;
     transform: skewY(-2deg);
 }
-
 .blue-box .item {
     color: white;
     transform: skewY(2deg);
     font-size: 12px;
     padding: 2em;
 }
-
 .blue-box .item img {
     height: 70px;
     padding: 10px;
 }
-
 .grey-box {
     background-color: rgb(235, 235, 235);
     text-align: center;
     padding: 3.5em 1em 1.5em 1em;
 }
-
 .grey-box .container {
     display: flex;
     flex-direction: column;
-
-
 }
-
-ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+.cta {
+    text-align: center;
 }
-
-.cta-message {
+.cta .message {
     margin-top: 3em;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
-
-.cta-button-container {
+.cta .button {
+    display: inline-block;
     text-align: center;
+    line-height: 2em;
     padding: 1em;
-}
-
-.cta-button {
-    text-decoration: none;
     background-color: green;
-    padding: 0.4em 2em 0.4em 2em;
     border-radius: 30px;
+    width: 20em;
+    height: 2em;
+    text-decoration: none;
+    padding: 0.4em 2em 0.4em 2em;
     color: white;
-    width: 10em;
 }
-
 @media (min-width: 700px) {
     .blue-box {
         display: flex;
         flex-direction: row;
     }
-
     .grey-box .container {
         flex-direction: row;
     }
-
 }
