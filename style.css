@@ -7,6 +7,10 @@ header {
     display: flex;
     justify-content: space-between;
 }
+section {
+    position: relative;
+    z-index: 0;
+}
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -43,10 +47,11 @@ h2 {
 .blue-box {
     text-align: center;
     background-color: #00c2ff;
-    margin: 0px;
-    padding: 10px 10px 2em 10px;
+    margin: 0 0 -1em 0;
+    padding: 10px 10px 3em 10px;
     border-top-left-radius: 6%;
     transform: skewY(-2deg);
+    z-index: -1;
 }
 .blue-box .item {
     color: white;
