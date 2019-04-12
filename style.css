@@ -18,30 +18,30 @@ section {
     position: relative;
     z-index: 0;
 }
-.server .img {
+.title {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+.title .img {
     height: 140px;
     padding: 0px;
     margin: 10px 0% 30px 5em;
 }
-.server {
-    text-align: center;
-    margin: 10px 0px 20px 0px;
-}
-h1 {
+.title h1 {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
     padding: 4px;
     margin: 4px;
 }
-h2 {
+.title h2 {
     text-align: center;
     font-size: 13px;
     padding: 4px;
     margin: 4px 0px 5em 0px;
     font-weight: normal;
 }
-.scroll {
+.title .scroll {
     display: none;
 }
 .blue-box {
