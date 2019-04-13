@@ -93,7 +93,7 @@ footer {
     flex-direction: column;
     transform: skewY(2deg);
     border-top-right-radius: 15%;
-    padding: 0 1em 1.5em 1em;
+    padding: 0 1em 0.5em 1em;
 }
 footer .container {
     transform: skewY(-2deg);
@@ -110,6 +110,13 @@ footer .address {
 footer .tsa-priv {
     display: flex;
     justify-content: space-between;
+}
+.filler {
+    background-color: black;
+    width: auto;
+    height: 20px;
+    margin-top: -10px;
+    z-index: -1;
 }
 @media (min-width: 700px) {
     .blue-box {
