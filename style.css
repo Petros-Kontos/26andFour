@@ -89,7 +89,8 @@ section {
 }
 .grey-box .container {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 .cta {
     text-align: center;
@@ -169,8 +170,5 @@ footer .tsa-priv {
         display: flex;
         flex-direction: column;
         padding: 1em;
-    }
-    .grey-box .container {
-        flex-direction: row;
     }
 }
