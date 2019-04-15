@@ -15,9 +15,9 @@ header {
 header .logo {
     height: 25px;
 }
-section {
-    position: relative;
-    z-index: 0;
+.main {
+    display: flex;
+    flex-flow: column nowrap;
 }
 .title {
     text-align: center;
@@ -44,9 +44,10 @@ section {
 .blue-box {
     text-align: center;
     background-color: #00c2ff;
-    margin: 0 0 -1em 0;
+    margin: 0;
     padding: 10px 10px 3em 10px;
-    z-index: -1;
+    display: flex;
+    flex-direction: column;
 }
 .blue-box .item {
     color: white;
@@ -59,13 +60,24 @@ section {
 }
 .grey-box {
     background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 3.5em 1em 1.5em 1em;
 }
-.grey-box .container {
+.grey-box .item {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
+}
+.grey-box .item .portrait {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    align-self: center;
+}
+.grey-box .item p {
+    width: 80vw;
+    align-self: center;
 }
 .cta {
     text-align: center;
@@ -110,8 +122,15 @@ footer .tsa-priv {
 }
 @media (min-width: 700px) {
     .blue-box {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 1em;
+    }
+    .grey-box {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1em;
+    }
+    .grey-box .item p {
+        width: 40vw;
     }
 }
