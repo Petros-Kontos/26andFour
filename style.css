@@ -39,42 +39,15 @@ section {
 .title .scroll {
     display: none;
 }
-.curve-top {
-    transform: skewY(-2deg);
-    margin-bottom: -1px;
-    z-index: -2;
-}
-.curve-top .circle {
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: 0;
-}
-.curve-top .circle .square {
-    background-color: #00c2ff;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    z-index: -1;
-    bottom: 0px;
-    right: 0px;
-}
 .blue-box {
     text-align: center;
     background-color: #00c2ff;
     margin: 0 0 -1em 0;
     padding: 10px 10px 3em 10px;
-    border-top-left-radius: 30px;
-    transform: skewY(-2deg);
     z-index: -1;
 }
-
 .blue-box .item {
     color: white;
-    transform: skewY(2deg);
     font-size: 12px;
     padding: 2em;
 }
@@ -111,39 +84,14 @@ section {
     padding: 0.4em 2em 0.4em 2em;
     color: white;
 }
-.curve-bot {
-    transform: skewY(2deg);
-    margin-bottom: -1px;
-}
-.curve-bot .circle {
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    border-radius: 50%;
-    margin-left: 0;
-    margin-right: auto;
-}
-.curve-bot .circle .square {
-    background-color: black;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    z-index: -1;
-    bottom: 0px;
-    left: 0px;
-}
 footer {
     background-color: black;
     color: grey;
     display: flex;
     flex-direction: column;
-    transform: skewY(2deg);
-    border-top-right-radius: 20px;
     padding: 0 1em 0.5em 1em;
 }
 footer .container {
-    transform: skewY(-2deg);
     text-align: center;
 }
 footer .container .logo {
