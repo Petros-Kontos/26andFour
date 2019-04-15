@@ -158,13 +158,6 @@ footer .tsa-priv {
     display: flex;
     justify-content: space-between;
 }
-.filler {
-    background-color: black;
-    width: auto;
-    height: 20px;
-    margin-top: -10px;
-    z-index: -1;
-}
 @media (min-width: 700px) {
     .blue-box {
         display: flex;
