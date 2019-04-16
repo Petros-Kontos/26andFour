@@ -80,6 +80,9 @@ header .logo {
     align-self: center;
 }
 .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 3em 0 5em 0;
 }
@@ -88,6 +91,7 @@ header .logo {
     font-weight: bold;
 }
 .cta .button {
+    align-self: center;
     display: inline-block;
     line-height: 2em;
     background-color: green;
@@ -132,5 +136,14 @@ footer .tsa-priv {
     }
     .grey-box .item p {
         width: 40vw;
+    }
+    .cta {
+        flex-direction: row;
+    }
+    .cta .message {
+        margin: 2em;
+    }
+    .cta .button {
+        margin: 2em;
     }
 }
