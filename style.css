@@ -79,6 +79,11 @@ header .logo {
     width: 80vw;
     align-self: center;
 }
+.grey-box .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .cta {
     display: flex;
     flex-direction: column;
@@ -137,8 +142,15 @@ footer .tsa-priv {
         justify-content: space-around;
         padding: 1em;
     }
+    .grey-box .item {
+        flex-direction: row;
+    }
     .grey-box .item p {
-        width: 40vw;
+        width: 30vw;
+    }
+    .grey-box .text {
+        text-align: left;
+        padding-left: 1em;
     }
     .cta {
         flex-direction: row;
