@@ -135,12 +135,12 @@ footer .tsa-priv {
 @media (min-width: 700px) {
     .blue-box {
         flex-direction: row;
-        padding: 1em;
+        padding: 2em 1em;
     }
     .grey-box {
         flex-direction: row;
         justify-content: space-around;
-        padding: 1em;
+        padding: 4em 1em;
     }
     .grey-box .item {
         flex-direction: row;
@@ -164,7 +164,7 @@ footer .tsa-priv {
     footer {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 5vw;
+        padding: 0 4vw;
     }
     footer .logo-address {
         text-align: left;
@@ -172,6 +172,7 @@ footer .tsa-priv {
     footer .tsa-priv {
         width: 20em;
         align-items: center;
+        justify-content: space-around;
     }
 
 }
