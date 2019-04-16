@@ -109,10 +109,12 @@ footer {
     flex-direction: column;
     padding: 0 1em 0.5em 1em;
 }
-footer .container {
+footer .logo-address {
     text-align: center;
+    width: 20em;
+    align-self: center;
 }
-footer .container .logo {
+footer .logo {
     padding: 30px;
     width: auto;
     height: 2em;
@@ -122,6 +124,7 @@ footer .address {
 }
 footer .tsa-priv {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 @media (min-width: 700px) {
@@ -146,4 +149,17 @@ footer .tsa-priv {
     .cta .button {
         margin: 2em;
     }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5vw;
+    }
+    footer .logo-address {
+        text-align: left;
+    }
+    footer .tsa-priv {
+        width: 20em;
+        align-items: center;
+    }
+
 }
