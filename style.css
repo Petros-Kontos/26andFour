@@ -13,7 +13,33 @@ header {
     justify-content: space-between;
 }
 header nav .links {
-    display: none;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(36,41,44);
+    z-index: 1;
+}
+header nav .menu:hover {
+    cursor: pointer;
+}
+header nav .links div:hover {
+    background-color: rgb(56, 63, 66);
+}
+header nav .links div a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+header nav .links .exit {
+    text-align: right;
+    padding: 1.1em;
+}
+header nav .links .exit:hover {
+    cursor: pointer;
 }
 header .logo {
     height: 25px;
@@ -40,9 +66,6 @@ header .logo {
     margin: 4px 0px 5em 0px;
     font-size: 13px;
     font-weight: normal;
-}
-.title .scroll {
-    display: none;
 }
 .blue-box {
     text-align: center;
@@ -135,6 +158,9 @@ footer .tsa-priv {
     flex-direction: row;
     justify-content: space-between;
 }
+.hide {
+    display: none;
+}
 @media (min-width: 700px) {
     header nav img {
         display: none;
@@ -142,13 +168,21 @@ footer .tsa-priv {
     header nav .links {
         display: flex;
         flex-flow: row nowrap;
+        position: static;
+        background-color: white;
     }
     header nav .links div {
         padding: 0 10px;
     }
+    header nav .links .exit {
+        display: none;
+    }
     header nav .links div a {
         text-decoration: none;
         color: black;
+    }
+    header nav .links div:hover {
+        background-color: white;
     }
     .blue-box {
         flex-direction: row;
