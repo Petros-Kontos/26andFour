@@ -12,6 +12,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
+header nav .links {
+    display: none;
+}
 header .logo {
     height: 25px;
 }
@@ -133,6 +136,20 @@ footer .tsa-priv {
     justify-content: space-between;
 }
 @media (min-width: 700px) {
+    header nav img {
+        display: none;
+    }
+    header nav .links {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    header nav .links div {
+        padding: 0 10px;
+    }
+    header nav .links div a {
+        text-decoration: none;
+        color: black;
+    }
     .blue-box {
         flex-direction: row;
         padding: 2em 1em;
