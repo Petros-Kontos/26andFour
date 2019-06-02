@@ -4,6 +4,7 @@ body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     display: grid;
+    text-align: center;
 }
 header {
     margin: 0px;
@@ -43,12 +44,7 @@ header nav .links .exit:hover {
 header .logo {
     height: 25px;
 }
-.main {
-    display: flex;
-    flex-flow: column nowrap;
-}
 .title {
-    text-align: center;
     margin: 10px 0px 5px 0px;
 }
 .title .img {
@@ -67,7 +63,6 @@ header .logo {
     font-weight: normal;
 }
 .blue-box {
-    text-align: center;
     background-color: #00c2ff;
     margin: 0;
     padding: 10px 10px 3em 10px;
@@ -87,7 +82,6 @@ header .logo {
     background-color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 3.5em 1em 1.5em 1em;
 }
 .grey-box .item {
@@ -113,7 +107,6 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     padding: 3em 0 5em 0;
 }
 .cta .message {
