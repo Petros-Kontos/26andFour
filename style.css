@@ -3,7 +3,6 @@
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    display: grid;
     text-align: center;
 }
 header {
@@ -80,28 +79,9 @@ header .logo {
 }
 .grey-box {
     background-color: rgb(235, 235, 235);
-    display: flex;
-    flex-direction: column;
-    padding: 3.5em 1em 1.5em 1em;
-}
-.grey-box .item {
-    display: flex;
-    flex-direction: column;
-}
-.grey-box .item .portrait {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    align-self: center;
-}
-.grey-box .item p {
-    width: 80vw;
-    align-self: center;
-}
-.grey-box .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-row-gap: 1em;
+    padding: 2em;
 }
 .cta {
     display: flex;
@@ -181,19 +161,8 @@ footer .tsa-priv {
         padding: 2em 1em;
     }
     .grey-box {
-        flex-direction: row;
         justify-content: space-around;
         padding: 4em 1em;
-    }
-    .grey-box .item {
-        flex-direction: row;
-    }
-    .grey-box .item p {
-        width: 30vw;
-    }
-    .grey-box .text {
-        text-align: left;
-        padding-left: 1em;
     }
     .cta {
         flex-direction: row;
