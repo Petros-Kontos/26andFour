@@ -83,6 +83,30 @@ header .logo {
     grid-row-gap: 1em;
     padding: 2em;
 }
+.grey-box .portrait-1 {
+    align-self: center;
+    justify-self: center;
+}
+.grey-box .review-1 {
+    justify-self: center;
+    align-self: end;
+    margin: 0;
+}
+.grey-box .signature-1 {
+    align-self: center;
+}
+.grey-box .portrait-2 {
+    align-self: center;
+    justify-self: center;
+}
+.grey-box .review-2 {
+    justify-self: center;
+    align-self: end;
+    margin: 0;
+}
+.grey-box .signature-2 {
+    align-self: center;
+}
 .cta {
     display: flex;
     flex-direction: column;
@@ -161,8 +185,28 @@ footer .tsa-priv {
         padding: 2em 1em;
     }
     .grey-box {
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+        grid-row-gap: 0;
         justify-content: space-around;
         padding: 4em 1em;
+    }
+    .grey-box .portrait-1 {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+    .grey-box .review-1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .grey-box .signature-1 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .grey-box .portrait-2 {
+        grid-area: 1 / 3 / 3 / 4;
+    }
+    .grey-box .review-2 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+    .grey-box .signature-2 {
+        grid-area: 2 / 4 / 3 / 5;
     }
     .cta {
         flex-direction: row;
