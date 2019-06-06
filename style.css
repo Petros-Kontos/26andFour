@@ -61,51 +61,31 @@ header .logo {
     font-size: 13px;
     font-weight: normal;
 }
-.blue-box {
+.blue-section {
     background-color: #00c2ff;
     margin: 0;
     padding: 10px 10px 3em 10px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
-.blue-box .item {
+.blue-section .item {
     color: white;
     font-size: 12px;
     padding: 2em;
 }
-.blue-box .item img {
+.blue-section .item img {
     height: 70px;
     padding: 10px;
 }
-.grey-box {
+.grey-section {
     background-color: rgb(235, 235, 235);
     display: grid;
     grid-row-gap: 1em;
     padding: 2em;
 }
-.grey-box .portrait-1 {
+.grey-section .item {
     align-self: center;
     justify-self: center;
-}
-.grey-box .review-1 {
-    justify-self: center;
-    align-self: end;
     margin: 0;
-}
-.grey-box .signature-1 {
-    align-self: center;
-}
-.grey-box .portrait-2 {
-    align-self: center;
-    justify-self: center;
-}
-.grey-box .review-2 {
-    justify-self: center;
-    align-self: end;
-    margin: 0;
-}
-.grey-box .signature-2 {
-    align-self: center;
 }
 .cta {
     display: flex;
@@ -180,33 +160,23 @@ footer .tsa-priv {
     header nav .links div:hover {
         background-color: white;
     }
-    .blue-box {
-        flex-direction: row;
+    .blue-section {
+        grid-template: 1fr / 1fr 1fr 1fr;
         padding: 2em 1em;
     }
-    .grey-box {
-        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    .grey-section {
+        grid-template: 1fr / 1fr 1fr;
         grid-row-gap: 0;
         justify-content: space-around;
-        padding: 4em 1em;
+        padding: 4em 1.5em 1em 1.5em;
     }
-    .grey-box .portrait-1 {
+    .grey-section .item {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 2fr;
+        margin: 1em;
+    }
+    .grey-section .item .portrait {
         grid-area: 1 / 1 / 3 / 2;
-    }
-    .grey-box .review-1 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-    .grey-box .signature-1 {
-        grid-area: 2 / 2 / 3 / 3;
-    }
-    .grey-box .portrait-2 {
-        grid-area: 1 / 3 / 3 / 4;
-    }
-    .grey-box .review-2 {
-        grid-area: 1 / 4 / 2 / 5;
-    }
-    .grey-box .signature-2 {
-        grid-area: 2 / 4 / 3 / 5;
     }
     .cta {
         flex-direction: row;
